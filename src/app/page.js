@@ -69,7 +69,7 @@ const App = () => {
       </AnimatePresence>
 
       {/* Main Hero Stage - Inspired by Reference Layout */}
-            <section className="relative min-h-screen w-full flex items-center justify-center p-4 md:p-10">
+       <section className="relative min-h-screen w-full flex items-center justify-center p-4 md:p-10">
         
         {/* Scalloped Stage Frame */}
         <div className="relative w-full max-w-[1400px] min-h-[85vh] rounded-[40px] overflow-hidden flex flex-col items-center justify-center" style={{ backgroundColor: stageColor }}>
@@ -92,36 +92,6 @@ const App = () => {
           </div>
 
           <div className="relative z-10 w-full max-w-2xl px-6 flex flex-col items-center">
-            <motion.div 
-              initial={{ scale: 0.5, opacity: 0, rotate: -10 }}
-              animate={{ scale: 1, opacity: 1, rotate: 0 }}
-              transition={{ type: "spring", damping: 12, delay: 0.2 }}
-              className="relative"
-            >
-              <img 
-                src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&q=80&w=1000" 
-                alt="Main Dessert" 
-                className="w-full h-auto drop-shadow-[0_50px_50px_rgba(8,50,136,0.4)] relative z-20"
-              />
-
-              {/* STICKERS - Graphic Overlays */}
-              <motion.div 
-                animate={{ rotate: [-15, -10, -15], y: [0, -5, 0] }}
-                transition={{ duration: 3, repeat: Infinity }}
-                className="absolute top-[10%] -left-[10%] z-30 bg-[#00F2FF] text-[#083288] px-6 py-2 rounded-xl font-black text-sm uppercase tracking-widest shadow-lg -rotate-12 border-b-4 border-[#00c9d4]"
-              >
-                Signature
-              </motion.div>
-
-              <motion.div 
-                animate={{ rotate: [12, 18, 12], y: [0, 5, 0] }}
-                transition={{ duration: 4, repeat: Infinity, delay: 0.5 }}
-                className="absolute bottom-[20%] -right-[5%] z-30 bg-[#D9F99D] text-[#083288] px-6 py-2 rounded-xl font-black text-sm uppercase tracking-widest shadow-lg rotate-12 border-b-4 border-[#b8d486]"
-              >
-                Madurai Made
-              </motion.div>
-            </motion.div>
-
             {/* CALL TO ACTION BUTTON */}
             <motion.button 
               whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
